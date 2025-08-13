@@ -7,6 +7,7 @@ public class HolaMundo {
         //Creacion de la variabale x de un entero
         int x = 2;
 
+
         }
         
 }

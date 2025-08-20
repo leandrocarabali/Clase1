@@ -58,6 +58,16 @@ public class Variables{
         double vmedia = 0;
         double vpond_t = 0;
         double  raiz = 0;
+        double cvprom = 0;
+        double costoMant = 0;
+        double kmlv = 0;
+        double kmlModelo = 0;
+        double litrosModelo = 0;
+        double w1 = 0.25;
+        double w2 = 0.25;
+        double w3 = 0.25;
+        double w4 = 0.25;
+        double score = 0;
 
         v1 = d1 / t1;
         v2 = d2 / t2;
@@ -122,6 +132,30 @@ public class Variables{
         vpond_t = (t1 * v1 + t2 * v2 + t3 * v3) / (t1 + t2 + t3);
         
         System.out.println("El resultado es:" + vpond_t);
+
+        cvprom = ca + (cb - ca) * (Vprom - va) / (vb - va);
+        costoMant = cvprom * (d1 + d2 + d3);
+        
+        System.out.println("El resultado es:" + cvprom);
+        System.out.println("El resultado es:" + costoMant);
+
+        kmlv = a*Math.pow(Vprom, 2) + b * Vprom + c;
+        kmlModelo = kmlv * Vprom;
+        litrosModelo = (d1 + d2 + d3) / kmlModelo;
+
+        System.out.println("El resultado es:" + kmlv);
+        System.out.println("el resultado es:" + kmlModelo);
+        System.out.println("El resultado es:" + litrosModelo);
+
+        score = (w1 * 1) / costoPorKm + w2 * kmltotal + (w3 * 1) / CO2porKm + (w4 * 1) / (1 + raiz);
+         System.out.println(scores);
+
+         
+
+
+
+
+        
 
         
 

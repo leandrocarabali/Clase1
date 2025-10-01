@@ -1,4 +1,5 @@
-ublic class ExpresioneS {
+package Clase2;
+public class ExpresioneS {
 
     public static void main(String [] args){
 
@@ -10,6 +11,7 @@ ublic class ExpresioneS {
         h = (((b + c) /  2 * a + 10) *3 * b) -6;
 
         System.out.println("El resultado es: "+ h);
+        
         
 
     }

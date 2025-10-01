@@ -148,7 +148,9 @@ public class Variables{
         System.out.println("El resultado es:" + litrosModelo);
 
         score = (w1 * 1) / costoPorKm + w2 * kmltotal + (w3 * 1) / CO2porKm + (w4 * 1) / (1 + raiz);
-         System.out.println(scores);
+
+         System.out.println("El resultado es:" + score);
+         
 
          
 
